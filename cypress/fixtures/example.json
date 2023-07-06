@@ -1,5 +1,57 @@
+//Response example
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "body": {
+    "firstname": "Johan",
+    "lastname": "Vicencio",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": { "checkin": "2022-12-01", "checkout": "2022-12-04" },
+    "additionalneeds": "Breakfast"
+  },
+  "headers": {
+    "server": "Cowboy",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "173",
+    "etag": "W/\"ad-QZ+O2XyM944ka9qKzsw3bHdQMAM\"",
+    "date": "Thu, 06 Jul 2023 05:20:59 GMT",
+    "via": "1.1 vegur"
+  },
+  "status": 200,
+  "statusText": "OK",
+  "isOkStatusCode": true,
+  "requestHeaders": {
+    "Connection": "keep-alive",
+    "Content-type": "application/json",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate"
+  },
+  "duration": 98,
+  "allRequestResponses": [
+    {
+      "Request Body": null,
+      "Request Headers": {
+        "Connection": "keep-alive",
+        "Content-type": "application/json",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate"
+      },
+      "Request URL": "https://restful-booker.herokuapp.com/booking/4413",
+      "Response Body": "{\"firstname\":\"Johan\",\"lastname\":\"Vicencio\",\"totalprice\":111,\"depositpaid\":true,\"bookingdates\":{\"checkin\":\"2022-12-01\",\"checkout\":\"2022-12-04\"},\"additionalneeds\":\"Breakfast\"}",
+      "Response Headers": {
+        "server": "Cowboy",
+        "connection": "keep-alive",
+        "x-powered-by": "Express",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "173",
+        "etag": "W/\"ad-QZ+O2XyM944ka9qKzsw3bHdQMAM\"",
+        "date": "Thu, 06 Jul 2023 05:20:59 GMT",
+        "via": "1.1 vegur"
+      },
+      "Response Status": 200
+    }
+  ]
 }
