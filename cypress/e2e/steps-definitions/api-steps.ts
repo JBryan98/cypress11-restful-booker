@@ -5,7 +5,7 @@ import {
   DataTable,
 } from "@badeball/cypress-cucumber-preprocessor";
 import { Booking, BookingResponse, GetBookingByIdResponse } from "../../interfaces/CreateBooking.interface";
-import { Auth, AuthResponse } from "../../interfaces/User.interface";
+import { Auth, AuthResponse } from "../../interfaces/Auth.interface";
 
 let token = "";
 let bookingid = 0;
