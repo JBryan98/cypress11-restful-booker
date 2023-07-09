@@ -1,7 +1,7 @@
 ## API Testing con Cypress y Cucumber
 
 ### Descripción
-Integración de Cypress, Typescript y Cucumber para API Testing. Se automatizaron los servicios de la API Publica **restful-booker** https://restful-booker.herokuapp.com/apidoc/index.html.
+Integración de Cypress, Typescript y Cucumber para API Testing utilizando el patrón de diseño Page Object Model. Se automatizaron los servicios de la API Publica **restful-booker** https://restful-booker.herokuapp.com/apidoc/index.html.
 
 ### Requisitos
 - El unico requisito es contar con una versión de **NodeJS >= 16**
