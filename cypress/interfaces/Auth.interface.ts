@@ -1,11 +1,4 @@
-export interface Auth {
+export interface AuthRequest {
     username: string;
     password: string;
-}
-
-export interface AuthResponse {
-    body: {
-        token: string;
-    }
-    status: number;
 }

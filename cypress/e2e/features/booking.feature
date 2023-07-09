@@ -1,33 +1,4 @@
-Feature: Restful Booker API
-
-    Feature Description
-
-    @Authorization
-    Scenario: Auth - Create Token
-        Given User registered on the API
-        When I access the API request endpoint to create token
-            | username | password    |
-            | admin    | password123 |
-        Then Verify the response status code 200
-
-    @Authorization
-    Scenario: The token contains 15 characters
-        Given User registered on the API
-        When I access the API request endpoint to create token
-            | username | password    |
-            | admin    | password123 |
-        Then Verify the response status code 200
-        And Verify the token contains 15 characters
-
-    @Authorization
-    Scenario: The token contains only alphanumeric characters
-        Given User registered on the API
-        When I access the API request endpoint to create token
-            | username | password    |
-            | admin    | password123 |
-        Then Verify the response status code 200
-        And Verify the token contains only alphanumeric characters
-
+Feature: Booking services testing
     @GetBooking
     Scenario: Get booking ids
         Given The access API request endpoint
@@ -42,7 +13,7 @@ Feature: Restful Booker API
             | Sally     | Brown    |
         Then Verify the response status code 200
 
-    @GetBooking
+    @GetBookingFilter
     Scenario: Get booking ids filtered by checkin/checkout
         Given The access API request endpoint
         When I access the API request endpoint to get all the booking ids filtered by bookingdates
@@ -82,16 +53,10 @@ Feature: Restful Booker API
         When I access the API request endpoint to partial update a booking
             | firstname | lastname |
             | bryan     | corrales |
-        Then Verify the response status code 200   
+        Then Verify the response status code 200
 
     @DeleteBooking
     Scenario: Delete Booking
         Given Booking registered on the API
         When I acces the request endpoint to delete a booking
         Then Verify the response status code 201
-
-    @Ping
-    Scenario: Ping - HealthCheck
-        Given And endpoint to confirm whether the API is up and running
-        When I access the api request endpoint to confirm the API is running
-        Then Verify the response status code 201   
